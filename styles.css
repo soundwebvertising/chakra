@@ -1,0 +1,486 @@
+@font-face {
+  font-family: 'Source Sans Pro', sans-serif;
+  src: url('fonts/SourceSansPro-BoldItalic.ttf') format('ttf'),
+    url('fonts/SourceSansPro-BoldItalic.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 50px;
+  background-image: url("images/AdobeStock_79924458.jpeg");
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0, 40px;
+  grid-template-areas: ". content content content content .";
+}
+
+.grid-video {
+  margin-top: 50px;
+  align-items: center;
+  grid-template-areas: "video video video benefits benefits benefits";
+}
+
+.grid-video video {
+  grid-area: video;
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  max-height: 400px;
+  margin-left: 20px;
+  min-width: 100px;
+}
+
+.grid-benefit-detail {
+  margin-top: 4rem;
+}
+
+.content {
+  grid-area: content;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.dark-header {
+  background-color: #a38ffa;
+  color: white;
+  position: relative;
+  z-index: 1;
+  margin-top: .11em;
+}
+
+.light-header {
+  color: white;
+  background-color: #c3baeb;
+  padding-top: 500px;
+  margin-top: -500px;
+}
+
+.brand-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  margin-right: .5rem;
+  margin-top: .5rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.dark-header-divider {
+  background-image: url("images/top-curve.svg");
+  height: 150px;
+  margin-top: -5px;
+  background-position: bottom left;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.light-header-divider {
+  background-image: url("images/bottom-curve.svg");
+  height: 150px;
+  margin-top: -5px;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.email-form input {
+  background-color: white;
+  color: #a38ffa;
+  border: 2px solid black;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin-right: 1em;
+  outline: none;
+  flex-grow: 1;
+}
+
+.email-form input:focus {
+  background-color: #eeecf1;
+}
+
+.email-form button {
+  color: white;
+  background-color: #111;
+  border: 2px solid white;
+  border-radius: .5em;
+  padding: .5em 1em;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.email-form button:hover, .email-form button:focus {
+  background-color: #333;
+}
+
+.contact-us {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.reiki-description {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.benefits-section {
+  grid-area: benefits;
+  margin-left: 3rem;
+  justify-self: flex-start;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.benefit i {
+  height: 3rem;
+  margin-right: 2rem;
+}
+
+.benefit-detail {
+  grid-column: span 2;
+  margin: 2rem;
+}
+
+.benefit-detail-title {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.benefit-detail-text {
+  font-size: 1.5rem;
+  color: #555555;
+  font-weight: lighter;
+}
+
+.quote-container {
+  margin: 0 auto;
+  width: 99.99%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.chakras-grid-image {
+  display: block;
+  margin: 0 auto;
+  width: 99.99%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  padding-bottom: 2rem;
+}
+
+.footer-section {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: rgb(200, 174, 243);
+}
+
+.footer {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+.footer .logo-container {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: inline-block;
+}
+
+.footer .logo-container .logo-verbage {
+  margin-left: 15px;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+
+.footer .logo-container img {
+  width: 50%;
+  height: 50%;
+}
+
+.footer .footer-third {
+  width: calc(21.6666666667% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.footer .footer-third:last-child {
+  margin-right: 0;
+}
+
+.footer .footer-third h1 {
+  font-size: 22px;
+  color: black;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer .footer-third a {
+  font-size: 16px;
+  font-weight: 200px;
+  color: black;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.footer .footer-third li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+  }
+
+  .grid-video {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'video' 'benefits';
+  }
+
+  .grid-benefit-detail {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid-video video {
+    justify-self: center;
+  }
+
+  .benefits-section {
+    margin-top: 2rem;
+    margin-left: 0;
+    justify-self: center;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .grid-benefit-detail{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .email-form {
+    flex-direction: column;
+  }
+  .email-form button {
+    max-width: initial;
+    width: 100%;
+  }
+  .email-form input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  .benefit {
+    font-size: 2rem;
+  }
+  .benefit img {
+    height: 2rem;
+    margin-right: 1rem;
+  }
+  .footer-section .footer {
+    width: 90%;
+  }
+  .footer .logo-container,
+  .footer .footer-third {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .brand-name {
+    display: none;
+  }
+  .logo {
+    margin-top: 1rem;
+  }
+  .email-form {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  .benefit {
+    font-size: 1.25rem;
+  }
+  .benefit img {
+    height: 1.25rem;
+    margin-right: .5rem;
+  }
+  .benefit-detail-title {
+    font-size: 1.25rem;
+  }
+  .benefit-detail-text {
+    font-size: 1.15rem;
+  }
+  .benefit-detail {
+    margin: 1rem;
+  }
+  .grid-benefit-detail {
+    margin-top: 1rem;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links{
+    flex-direction: column;
+    align-items: flex-start ;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: .5rem 1 rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .footer-section .footer {
+    width: 90%;
+  }
+  .footer .logo-container,
+  .footer .footer-third {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .chakras-grid-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
